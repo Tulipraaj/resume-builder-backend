@@ -18,7 +18,7 @@ app.use(cors({
     'https://resume-builder-frontend-navy.vercel.app'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization','Access-Control-Allow-Origin'],
+  allowedHeaders: ['Content-Type', 'Authorization','Access-Control-Allow-Origin','Access-Control-Allow-Credentials','Access-Control-Allow-Headers'],
   credentials: true
 }));
 
