@@ -2,7 +2,7 @@
     "version": 2,
     "name": "resume builder api",
     "builds": [
-       { "src": "server.mjs", "use": "@vercel/node" }
+       { "src": "server.js", "use": "@vercel/node" }
     ],
     "routes": [
        { "src": "/(.*)",

@@ -1,9 +1,10 @@
-import express from "express";
-import mongoose from "mongoose";
-import cors from "cors";
-import dotenv from "dotenv";
-import resumeRoutes from "./routes/resume.js";
-import userRoutes from "./routes/user.js";
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+const dotenv = require("dotenv");
+const resumeRoutes = require("./routes/resume.js");
+const userRoutes = require("./routes/user.js");
+
 
 dotenv.config();
 
@@ -17,7 +18,7 @@ app.use(cors({
     'https://resume-builder-frontend-navy.vercel.app'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  allowedHeaders: ['Content-Type', 'Authorization','Access-Control-Allow-Origin'],
   credentials: true
 }));
 
